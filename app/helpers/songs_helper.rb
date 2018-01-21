@@ -9,7 +9,7 @@ module SongsHelper
 
   def link_to_song(song)
     if(song.artist)
-      link_to song.artist.name, song_path(song.id)
+      link_to song.title, song_path(song.id)
     else
       link_to "Add Artist", edit_song_path(song)
     end
